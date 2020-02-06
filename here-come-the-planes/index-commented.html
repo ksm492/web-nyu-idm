@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<!-- This is the Head tag. It defines information about the HTML document, such as
+the title tag, style tag, links to scripts, and CSS files. -->
+<head>
+  <!-- This is the title tag. It defines the title of the web page, which can be seen on the
+tab on an internet server. -->
+  <title>Here Come The Planes</title>
+  <!-- This is a link to a google font online. This font can now be used in the code so long as it is
+identified by the font-family name: 'Francois One', sans-serif. -->
+  <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+  <!-- This is the style tag. It defines any information about style in the HTML document.
+  In this web page, it contains the CSS file, but it also contains any classes made in the HTML
+head tag. -->
+  <style>
+    /* This comment is written in CSS because the CSS file is starting. CSS is a coding
+    language that defines the style of an HTML document and describes how HTML elements
+    should be displayed when running on a browser. Without CSS, HTML elements would be
+    restricted to default settings.*/
+    /* This is a CSS body tag. It contains information about styling such as background and font.
+    It is different from an HTML body tag because it is only styling elements, not holding information
+    such as text, images, tables, lists, etc. */
+    body {
+      /* This is the background-image CSS attribute. It allows either an image, video, or gradient to
+      be the background of a web page. The background attribute can only display colors. */
+      background-image: url("https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+      /* These background attributes define the properties of the primary background attribute. */
+      /* This background attribute defines that the image be placed in the center of the web page. */
+      background-position: center;
+      /* This background attribute defines that the image no repeat throughout the web page. */
+      background-repeat: no-repeat;
+      /* This background attribute defines that the image cover the entire window width and height. */
+      background-size: cover;
+      /* This CSS attribute determines the alignment of the text. In this case, it is centered, but it can also
+      be left or right depending on preference. */
+      text-align: center;
+      /* This CSS attribute determines the display of the text's font. This can style the font's size, family, weight,
+       and distribution.*/
+       /* Font size refers to the size of the font, and is measured by the size of px or by generic name such as small,
+       medium, large, etc. */
+      font-size: 40px;
+      /* Font family refers to the font of an element. There are two types of distinctions, "family-name" and "generic-family".
+      Family name is the name of a specific font style, such as times, and generic family is the name of the typographic style, such as serif. */
+      font-family: times;
+    }
+    /* This is a hover CSS attribute applied to an h1 tag. This attribute changes the style of a HTML element
+    when the mouse is hovering over that HTML element. */
+    h1:hover {
+      color: red;
+      /* This is a text-shadow CSS element. It creates a shadow behing a text. It's properties include the x and y direction
+       and the color of the shadow. */
+      text-shadow: 3px 3px blue;
+    }
+
+    /* This is the CSS styling for a second header HTML element. It includes styling such as color, alignment,
+    font size, and font family. In this case, it also includes the properties of a text animation. */
+    h2 {
+      color: red;
+      font-family: 'Francois One', sans-serif;
+      /* This is an animation-name CSS attribute. It gives a name for an animation within a web page. */
+      animation-name: gradient;
+      /* This is an animation-duration CSS attribute. It determines the length that an animation runs for. */
+      animation-duration: 2s;
+      /* This is an animation-iteration-count CSS attribute. It determines how many times an animation runs
+      before stopping. In this case, the animation runs inifintely. */
+      animation-iteration-count: infinite;
+      font-size: 80px;
+    }
+    /* This is a component of an animation CSS attribute that determines the keyframes of an animation.
+    In this case, the animation is only changing the color of an h2 element's font color from red to blue. */
+    @keyframes gradient {
+      from {
+        color: red;
+      }
+
+      to {
+        color: blue;
+      }
+    }
+    /* This is the CSS styling for for a paragraph HTML element. It includes styling such as color, alignment,
+    font size, font family, and in this case, margin properties. */
+    p {
+    /* This is a CSS attribute for the color of the font of a text. Colors can be written by name, if generic enough,
+    or by hex code. */
+      color: black;
+      text-align: center;
+      font-size: 40px;
+      font-family: arial;
+      margin-bottom: 0px;
+    }
+    /* This is the CSS styling for a class within a HTML paragraph tag. It includes styling such as color, alignment,
+    font size, font family, and in this case, margin properties. */
+    a {
+      color: black;
+      font-family: times;
+      font-size: 80px;
+      text-align: center;
+      margin: auto;
+    }
+    /* This is a hiver CSS attribute applied to an HTML class named "a". This attribute changes the style of a HTML element
+    when the mouse is hovering over that HTML element. In this case, it is changing both the size, background color, and color
+    of the text. */
+    a:hover {
+      background-color: blue;
+      color: red;
+      font-size: 100px;
+      text-align: center;
+      margin: auto;
+    }
+    /* This is the CSS styling for an image within the HTML body tag. It can determine properties of an image such as
+    its size and even filters. Filters include greyscale, blur, brightness, contrast, shadow, opacity, and saturation. */
+    img {
+      /* These CSS attributes determines the scale at which an image's width and height are set. */
+      width: 60%;
+      height: 60%;
+    }
+    /* This is the CSS styling for a container class. It determines the properties of the container that does not include text,
+    such as its size, margins, padding, display, and color. */
+    .flex-container {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: transparent;
+    }
+    /* This is the CSS styling for a container class. It determines the properties of the container that includes the text,
+    such as its size, margins, padding, display, and color. It also includes properties for the text itself, such
+    as font, color, and alignment.*/
+    .flex-container>div {
+      background-color: blue;
+      color: red;
+      width: 100px;
+      margin: auto;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+      font-family: 'Francois One', sans-serif;
+    }
+    /* This is a the CSS styling for an animation class. It includes the type of animation and the iteration count of the animation,
+    which is in this case, infinite. When the animation is set to infinite, it makes it look like a gif. */
+    .planeShake:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+    /* This is a component of an animation CSS attribute that determines the keyframes of an animation.
+    In this case, the animation is determining the points at which to move the image so that it looks
+    as if it is shaking on the webpage. */
+    @keyframes shake {
+       /* Each percentage shown is a fraction of an animation. In this case, each increment is a different
+       coordinate that the image is moved to with a slight variation in degree. */
+       /* This is the animation at 0%. It has moved over 1px right and 1 px up. It is the starting position of
+       the animation. */
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+      /* This is the animation at 10%. It has moved over 1px left and 2 px down. It has rotated -1 degrees. */
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+      /* This is the animation at 20%. It has moved over 3px left. It has rotated 1 degree. */
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+      /* This is the animation at 30%. It has moved over 3px right and 2 px up. */
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+      /* This is the animation at 40%. It has moved over 1px right and 1 px down. It has rotated 1 degree. */
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+      /* This is the animation at 50%. It has moved over 1px left and 2 px up. It has rotated -1 degrees. */
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+      /* This is the animation at 60%. It has moved over 3px left and 1 px up. */
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+      /* This is the animation at 70%. It has moved over 3px right and 1 px up. It has rotated -1 degrees. */
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+      /* This is the animation at 80%. It has moved over 1px left and 1 px down. It has rotated 1 degree. */
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+      /* This is the animation at 90%. It has moved over 1px right and 2 px up. */
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+      /* This is the animation at 100%. It has moved over 1px right and 2 px down. It has rotated -1 degrees. */
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+    /* This is the CSS styling for a div class named "uppercase". In this case, it is defining that any HTML element within
+    the "uppercase" class.*/
+    div.uppercase {
+      text-transform: uppercase;
+    }
+    /* The style tag is closed, which means that CSS stops here. */
+  </style>
+<!-- This is an HTML head tag. It is a container for all the head elements. In this case, it is contains
+the body tag, which hold all the text and images of the web page. -->
+</head>
+<!-- This is where all the HTML elements are written. The HTML elements is the skeleton of a web page. If a web page
+was solely written in HTML, it would look like a document stipped to only text, images, and links.-->
+<body>
+  <!-- This is a HTML div class named "uppercase". It will be called in the style tag so that it can be defined in CSS as
+  to what properties it displays when running on a web browser. In this case, the class only applies to all the text in <thead>
+    HTML body.
+  </thead>-->
+  <div class="uppercase">
+    <!-- The <h1> - <h6> tags are used to define HTML headings. The more important the heading, the lower its number, making h1 <thead>
+      the highest in the HTML header heirarchy. -->
+    <h1>here</h1>
+    <h1>come</h1>
+    <h1>the</h1>
+    <!-- This is a HTML div class named "flex-container". It is written using the tags <div></div> because it will later
+  be applied to a container further styled in CSS.-->
+    <div class="flex-container">
+      <div>p</div>
+      <div>l</div>
+      <div>a</div>
+      <div>n</div>
+      <div>e</div>
+      <div>s</div>
+    </div>
+    <!-- This is a HTML div class named "planeShake". It includes the image of the plane that is animated in CSS using the animation
+  and keyframe attributes. -->
+    <div class="planeShake">
+      <!-- This is an img src tag. This tag uploads an image from online using its image address directly. This is a quick way to
+    upload an image, but can lead to complications regarding copyright and potentially the image being removed online and thus removed
+  from the web page. -->
+      <img src="https://www.freepnglogos.com/uploads/plane-png/plane-png-professional-pilot-careersamerican-flyers-9.png">
+    </div>
+    <!-- This is an h2 HTML header tag. It signifies that it is second in the HTML header heirarchy and thus smaller in font size by default. -->
+    <h2>they're american planes</h2>
+    <!-- This is a HTML paragraph tag. Paragraphs are below headers in HTML text heirarchy, and are distinct by not being bolded and smaller in size
+  compared to headers. -->
+    <p>made in</p>
+    <!-- This is a class made specifically to identify a in-line link when the text is clicked. In this case, when the word "america" is clicked,
+  the web page will redirect to the link tagged below. -->
+    <a href="https://estherpyr.github.io/web-nyu-idm/here-come-the-planes/">america</a>
+    <!-- This is the end of the div class "uppercase", signified by the / in the tag. -->
+  </div>
+  <!-- This is the end of the body tag, signified by the / in the tag. -->
+</body>
+<!-- This is the end of the html tag, signified by the / in the tag. There are no html elements beyond this section in the code. -->
+</html>
+<!-- HTML STOPS here! -->
