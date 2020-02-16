@@ -40,7 +40,11 @@ of my website. */
   font-family: 'Kosugi', sans-serif;
 }
 
-/* Level 14: Only Child Selector */
+/* Level 14: Child Selector
+The Child Selector selects any HTML element that is a direct child of another one.
+In my code, ul>li selects all the li that are direct children of ul. In this code,
+the Child Selector applies the text properties to the bulleted text in the unordered
+list.  */
 ul>li {
   text-align: left;
   font-size: 18px;
