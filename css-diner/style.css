@@ -52,6 +52,10 @@ ul>li {
 }
 
 /* Level 20: First of Type Selector */
+/* The First of Type Selector selects the first element of that type within another element.
+This is helpful when there are multiple instances of the same element, such as HTML headers,
+paragraphs, spans, or divs. In my code, the first type selector was applied to h2, and detailed
+its text properties. */
 h2:first-of-type {
   background: black;
   color: white;
