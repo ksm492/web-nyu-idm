@@ -5,7 +5,11 @@ body {
   margin: 0;
   padding: 0;
 }
-/* Level 10: Universal Selector*/
+/* Level 10: Universal Selector
+The Universal Selector applies to all the HTML elements in my code. It is a quick
+way to apply any CSS properties to all the HTML elements, such as formatting.
+In my code specifically, it details the formatting of the website's margins and
+box-sizing.*/
 * {
   margin-left: 30px;
   margin-right: 30px;
@@ -19,7 +23,11 @@ body {
   background-color: yellow;
   color: black;
 }
-/* Level 3: ID Selector */
+/* Level 3: ID Selector
+The ID Selecor styles any HTML element with the specified ID. It is different from
+a class in that a class can be used by multiple elements, but an ID can only belong
+to a single element. In my code, the #header ID details the properties of the h1 header
+of my website. */
 #header {
   text-align: center;
   font-size: 48px;
