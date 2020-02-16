@@ -64,6 +64,10 @@ h2:first-of-type {
 }
 
 /* Level 24: Last of Type Selector */
+/* The Last of Type Selector selects the last element of that type within another element.
+This is different from the first type selector in that it selects the last element, but both
+are good for the differentiation of the same html elements that are used multiple times.
+In my code, the last type selector was applied to h2, and details its text properties. */
 h2:last-of-type {
   background: black;
   color: white;
