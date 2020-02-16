@@ -5,34 +5,60 @@ body {
   margin: 0;
   padding: 0;
 }
-
-*, *:before, *:after {
+/* Level 10: Universal Selector*/
+* {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   box-sizing: inherit;
 }
 /* THE END of default helpful basic CSS to include. EDIT the stuff BELOW this line*/
 
-@font-face {
-  font-family: 'violet';
-  src: url('./fonts/VioletSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  background-color: violet;
-  color: yellow;
+  background-color: yellow;
+  color: black;
+}
+/* Level 3: ID Selector */
+#header {
   text-align: center;
-  font-size: 2em;
+  font-size: 48px;
+  font-family: 'Kosugi', sans-serif;
 }
 
-.my-fun-class {
-  width: 40%;
-  border: 2px solid forestgreen;
+.introduction {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Kosugi', sans-serif;
+}
+
+/* Level 14: Only Child Selector */
+ul>li {
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Kosugi', sans-serif;
+}
+
+/* Level 20: First of Type Selector */
+h2:first-of-type {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+}
+
+/* Level 24: Last of Type Selector */
+h2:last-of-type {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+}
+
+/* Link to reference on how to center an image: https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
   display: block;
-  margin: auto;
-}
-
-img {
-  width: 40%;
-  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
