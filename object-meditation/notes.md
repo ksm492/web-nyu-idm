@@ -8,7 +8,7 @@
 - Together
 
 ### Are there spacial places this object is associated with?
-- This object is associated with my girlfriend Anna, and where ever she is is my home.
+- This object is associated with my girlfriend Anna, and she is my home.
 
 ### What does my object look like?
 - My object is a blue, ceramic bunny that can only stay up when its kissing its other
