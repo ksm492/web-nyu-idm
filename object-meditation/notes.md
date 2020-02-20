@@ -8,7 +8,8 @@
 - Together
 
 ### Are there spacial places this object is associated with?
-- This object is associated with my girlfriend Anna, and she is my home.
+- This object is associated with my girlfriend Anna, and where ever she is is my
+home. 
 
 ### What does my object look like?
 - My object is a blue, ceramic bunny that can only stay up when its kissing its other
@@ -22,13 +23,16 @@ for the most part, its feels just like it did the day I got it.
 ### What does my object sound like?
 - My object clatters when it falls, so much so that every time it does I'm worried
 that it broke. But when it's with the other bunny, it never falls and is silent.
+I would associate it with Anna's voice, probably saying "hello!" or "give me attention!"
 
 ### What does my object smell like?
-- My object doesn't smell like anything (not me or Anna).
+- My object doesn't smell like anything (not me or Anna). If it were a smell, it
+would be Anna's perfume (Ralph Lauren, Tender Romance).
 
 ### Where did you get it?
 - Anna gave me my bunny a few days before I left for New York. She has the other half
-with her back home.
+with her back home. It was a going-away gift, but more like a part of Anna coming with
+me.
 
 ### What are the emotions attached to this object for you?
 - This object makes me both happy and sad. It reminds me of Anna, which makes me
@@ -52,10 +56,10 @@ Sometimes, when I miss Anna, I kiss its nose. I hope that one day, both kissing
 bunnies will be reunited again.
 
 ### What are some other objects it does or might have relationships with?
-- My kissing bunny is in a series, long distance relationship with Anna's kissing
+- My kissing bunny is in a serious, long distance relationship with Anna's kissing
 bunny.
 
 ### What is a specific memory you have with this object?
 - This object reminds me of the last day of summer I spent with Anna before leaving
-for school, when she gave me my kissing bunny and showed me hers. When I left, so did
-my half of our kissing bunnies.
+for school, when she gave me my kissing bunny and showed me the one she has. When I left,
+so did my half of our kissing bunnies.
