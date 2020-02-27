@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(#fbb7a2, #fb918f);
+}
+
+.container {
+  position: relative;
+  font-family:"Reenie Beanie", sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.audio {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.waiting {
+  text-align: right;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  opacity: 80%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(#fbb7a2, #fb918f);
+  }
+}
