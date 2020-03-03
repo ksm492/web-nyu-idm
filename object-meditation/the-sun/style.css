@@ -12,7 +12,8 @@ body {
   background-image: linear-gradient(#fbb7a2, #fb918f);
   background-repeat: no-repeat;
 }
-
+/* Flexbox Froggy: Level 5. I used the align-items property to format all my html
+elements to fit within the container. */
 #container {
   display: flex;
   align-items: stretch;
