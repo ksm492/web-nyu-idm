@@ -18,21 +18,20 @@ elements to fit within the container. */
   display: flex;
   align-items: stretch;
   font-family:"Reenie Beanie", sans-serif;
-  font-size: 26px;
-  line-height: 0.9;
+  font-size: 24px;
   color: white;
   opacity: 80%;
 }
 
 .audio {
-  position: fixed;
+  position: absolute;
   top: 35px;
   left: 20px;
 }
 
 .falling {
   text-align: left;
-  position: fixed;
+  position: absolute;
   top: 100px;
   left: 30px;
 }
@@ -54,5 +53,6 @@ img#background {
   body {
     background-image: linear-gradient(#4c4a6b, #9dabdf);
     background-repeat: no-repeat;
+    font-size-adjust: auto;
   }
 }

@@ -18,22 +18,21 @@ elements to fit within the container. */
   display: flex;
   align-items: stretch;
   font-family:"Reenie Beanie", sans-serif;
-  font-size: 25px;
-  line-height: 0.9;
+  font-size: 24px;
   color: white;
   opacity: 80%;
 }
 
 .audio {
-  position: fixed;
+  position: absolute;
   top: 35px;
   right: 20px;
 }
 
 .waiting {
   text-align: right;
-  position: fixed;
-  top: 100px;
+  position: absolute;
+  top: 95px;
   right: 30px;
 }
 
