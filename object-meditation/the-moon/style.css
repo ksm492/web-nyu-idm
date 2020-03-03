@@ -13,31 +13,40 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
-  position: relative;
+#container {
+  display: flex;
+  align-items: stretch;
   font-family:"Reenie Beanie", sans-serif;
-  font-size: 32px;
+  font-size: 26px;
+  line-height: 0.9;
   color: white;
   opacity: 80%;
 }
 
 .audio {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+  position: fixed;
+  top: 35px;
+  left: 20px;
 }
 
 .falling {
   text-align: left;
-  position: absolute;
+  position: fixed;
   top: 100px;
-  left: 50px;
+  left: 30px;
 }
 
-img {
+img#sun {
+  width: 3.5%;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+img#background {
   width: 100%;
   height: auto;
-  opacity: 80%;
 }
 
 @media only screen and (max-width: 600px) {
