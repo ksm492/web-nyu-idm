@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background-image: url("moon.png");
+  background-image: url("images/moon.png");
   background-size: cover;
   background-color: #7a76ab;
   background-repeat: no-repeat;
@@ -18,7 +18,13 @@ body {
 
 #top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#content {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -40,6 +46,34 @@ body {
   margin-right: 2%;
 }
 
+#pictures {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 55%;
+  margin-top: -4%;
+  position: fixed;
+}
+
+div.polaroid:nth-of-type(2) {
+  align-self: flex-start;
+  width: 30%;
+}
+
+div.polaroid {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  font-family: "Reenie Beanie", sans-serif;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
 #falling {
   display: flex;
   display: block;
@@ -54,7 +88,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url("moon.png");
+    background-image: url("images/moon.png");
     background-size: cover;
     background-color: #7a76ab;
     background-repeat: no-repeat;
