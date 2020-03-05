@@ -47,15 +47,15 @@ body {
 
 #pictures {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  margin-left: 2%;
   margin-top: 2%;
+  margin-left: 2%;
   position: fixed;
 }
 
 div.polaroid:nth-of-type(2) {
-  align-self: flex-end;
+  align-self: center;
   width: 30%;
 }
 
