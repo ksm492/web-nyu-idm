@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("images/sun.png");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #fb918f;
+  background-repeat: no-repeat;
+}
+
+#bottom {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#audio {
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
+  height: auto;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+#icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+#pictures {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 2%;
+  position: fixed;
+}
+
+div.polaroid:nth-of-type(2) {
+  align-self: flex-end;
+  width: 30%;
+}
+
+div.polaroid {
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  font-family: "Reenie Beanie", sans-serif;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#waiting {
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  text-align: right;
+  font-family: "Reenie Beanie", sans-serif;
+  margin-left: 68%;
+  width: 30%;
+  font-size: 150%;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("images/sun.png");
+    background-size: cover;
+    background-color: #fb918f;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
