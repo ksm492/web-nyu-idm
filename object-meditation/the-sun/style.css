@@ -9,48 +9,54 @@ body {
 }
 
 body {
-  background-image: linear-gradient(#fbb7a2, #fb918f);
+  background-image: url("sun.png");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #fb918f;
   background-repeat: no-repeat;
 }
-/* Flexbox Froggy: Level 5. I used the align-items property to format all my html
-elements to fit within the container. */
-#container {
+
+#bottom {
   display: flex;
-  align-items: stretch;
-  font-family:"Reenie Beanie", sans-serif;
-  font-size: 24px;
-  color: white;
-  opacity: 80%;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-.audio {
-  position: absolute;
-  top: 35px;
-  right: 20px;
+#audio {
+  display: flex;
+  justify-content: flex-end;
+  width: 15%;
+  height: auto;
+  margin-bottom: 2%;
+  margin-right: 2%;
 }
 
-.waiting {
+#icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+#waiting {
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  margin-left: 68%;
   text-align: right;
-  position: absolute;
-  top: 95px;
-  right: 30px;
-}
-
-img#moon {
-  width: 2%;
-  height: auto;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-img#background {
-  width: 100%;
-  height: auto;
+  font-family: "Reenie Beanie", sans-serif;
+  width: 30%;
+  font-size: 150%;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: linear-gradient(#fbb7a2, #fb918f);
+    background-image: url("sun.png");
+    background-size: cover;
+    background-color: #fb918f;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
