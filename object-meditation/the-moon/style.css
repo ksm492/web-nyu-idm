@@ -48,14 +48,14 @@ body {
 
 #pictures {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
-  margin-left: 55%;
+  margin-left: 40%;
   position: fixed;
 }
 
 div.polaroid:nth-of-type(2) {
-  align-self: flex-start;
+  align-self: center;
   width: 30%;
 }
 
