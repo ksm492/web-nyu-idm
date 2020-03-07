@@ -57,11 +57,10 @@ body {
 
 div.polaroid:nth-of-type(2) {
   align-self: center;
-  width: 30%;
 }
 
 div.polaroid {
-  width: 25%;
+  width: 30%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -88,10 +87,16 @@ div.container {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url("images/moon.png");
-    background-size: cover;
-    background-color: #7a76ab;
-    background-repeat: no-repeat;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
+    background-color: #b9daee;
+  }
+
+  #content {
+    display: none;
+  }
+
+  #top {
+    display: none;
   }
 }
