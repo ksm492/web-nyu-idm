@@ -86,7 +86,7 @@ of jQuery background animation */
   position: fixed;
 }
 
-/* CSS for the "polaroid" pictures */
+/* CSS for the "polaroid" pictures, credit to https://www.w3schools.com/css/css3_images.asp */
 
 /* Moves middle photo towards center of website using "nth-of-type" to select
 second photo in the flex box column */

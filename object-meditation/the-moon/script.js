@@ -8,7 +8,7 @@ $(document).ready(function() {
   });
 
   $("#heart").click(function() {
-    var windowHeight = 1920;
+    var windowHeight = $(window).height();
 
     $("#heart").fadeIn()
     .css({position:'relative'})
