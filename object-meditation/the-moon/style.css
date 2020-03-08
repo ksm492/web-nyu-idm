@@ -11,7 +11,7 @@ body {
 body {
   background-image: url("images/moon.png");
   background-size: cover;
-  background-color: #7a76ab;
+  background-color: #9994d6;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -19,30 +19,35 @@ body {
 #top {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   justify-content: space-between;
+  margin-top:2%;
 }
 
 #content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  margin-top: -2%;
+}
+
+.image-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-top: -2%;
 }
 
 #audio {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
-  width: 15%;
-  height: auto;
-  margin-top: 2%;
   margin-left: 2%;
 }
 
 #icon {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
-  margin-top: 2%;
   margin-right: 2%;
 }
 
@@ -73,6 +78,10 @@ div.container {
   padding: 10px 20px;
 }
 
+.night {
+  color: black;
+}
+
 #falling {
   display: flex;
   display: block;
@@ -90,6 +99,10 @@ div.container {
     background-size: contain;
     background-position: center;
     background-color: #b9daee;
+  }
+
+  .image-button {
+    display: none;
   }
 
   #content {
