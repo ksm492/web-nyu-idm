@@ -8,6 +8,10 @@ body {
   box-sizing: inherit;
 }
 
+/* CODE FOR WEBSITE VERSION */
+
+/* Body, sets the background image and background formatting */
+
 body {
   background-image: url("images/moon.png");
   background-size: cover;
@@ -16,19 +20,7 @@ body {
   background-position: top;
 }
 
-#top {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top:2%;
-}
-
-#content {
-  display: flex;
-  align-items: flex-start;
-  margin-top: -2%;
-}
+/* Image button flexbox, sets up img#heart for jQuery animiation*/
 
 .image-button {
   display: flex;
@@ -39,16 +31,50 @@ body {
   margin-top: -2%;
 }
 
+/* CSS for the div.night class in the lyrics to change its color and hint user
+of jQuery background animation */
+
+.night {
+  color: black;
+}
+
+/* Top flexbox, includes audio, instructions, and linked-icon */
+
+#top {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:2%;
+}
+
 #audio {
   display: flex;
   justify-content: flex-start;
   margin-left: 2%;
 }
 
+#instructions {
+  display: flex;
+  justify-content: center;
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 100%;
+  color: white;
+  margin-right: 13%
+}
+
 #icon {
   display: flex;
   justify-content: flex-end;
   margin-right: 2%;
+}
+
+/* Content flexbox: includes pictures and lyrics */
+
+#content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -2%;
 }
 
 #pictures {
@@ -60,9 +86,17 @@ body {
   position: fixed;
 }
 
+/* CSS for the "polaroid" pictures */
+
+/* Moves middle photo towards center of website using "nth-of-type" to select
+second photo in the flex box column */
+
 div.polaroid:nth-of-type(2) {
   align-self: center;
 }
+
+/* Determines the formatting of the pictures and the empty white space underneath
+to create "polaroid" effect*/
 
 div.polaroid {
   width: 30%;
@@ -70,16 +104,14 @@ div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Container for the text underneath the pictures */
+
 div.container {
   font-family: "Reenie Beanie", sans-serif;
   color: black;
   font-size: 18px;
   text-align: center;
   padding: 10px 20px;
-}
-
-.night {
-  color: black;
 }
 
 #falling {
@@ -94,12 +126,16 @@ div.container {
   color: white;
 }
 
+/* CODE FOR MOBILE VERSION */
+
 @media only screen and (max-width: 600px) {
   body {
     background-size: contain;
     background-position: center;
     background-color: #b9daee;
   }
+
+  /* Display set to "none" for website version html elements */
 
   .image-button {
     display: none;
