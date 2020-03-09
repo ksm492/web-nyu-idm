@@ -22,7 +22,7 @@ body {
 
 /* Image button flexbox, sets up img#heart for jQuery animiation*/
 
-.image-button {
+.click-me {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -35,7 +35,7 @@ body {
 of jQuery background animation */
 
 .night {
-  color: black;
+  color: #1e1d2a;
 }
 
 /* Top flexbox, includes audio, instructions, and linked-icon */
@@ -126,18 +126,53 @@ div.container {
   color: white;
 }
 
+/* Display set to "none" for mobile version html elements */
+
+.buttons {
+  display: none;
+}
+
 /* CODE FOR MOBILE VERSION */
 
 @media only screen and (max-width: 600px) {
+
   body {
-    background-size: contain;
-    background-position: center;
+    background-image: url("images/blue.png");
     background-color: #b9daee;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .togglebtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+    border-radius: 4px;
+    border: #aec4ea;
+    background: #aec4ea;
+  }
+
+  .dream-gif{
+  	display:none;
+  }
+
+  .miss-gif{
+    display:none;
+  }
+
+  .think-gif{
+    display:none;
   }
 
   /* Display set to "none" for website version html elements */
 
-  .image-button {
+  .click-me {
     display: none;
   }
 
