@@ -128,7 +128,19 @@ div.container {
 
 /* Display set to "none" for mobile version html elements */
 
-.buttons {
+.togglebtn {
+  display: none;
+}
+
+.dream-gif{
+  display: none;
+}
+
+.miss-gif{
+  display: none;
+}
+
+.think-gif{
   display: none;
 }
 
@@ -147,23 +159,51 @@ div.container {
   .togglebtn {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #dream-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#9994d6;
+    background: #9994d6;
+  }
+
+  #miss-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#9994d6;
+    background: #9994d6;
+  }
+
+  #think-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#9994d6;
+    background: #9994d6;
   }
 
   .dream-gif{
-  	display:none;
+    display: none;
   }
 
   .miss-gif{
-    display:none;
+    display: none;
   }
 
   .think-gif{
-    display:none;
+    display: none;
   }
 
   /* Display set to "none" for website version html elements */
