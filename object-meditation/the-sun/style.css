@@ -12,7 +12,7 @@ body {
   background-image: url("images/sun.png");
   background-size: cover;
   background-position: bottom;
-  background-color: #fb918f;
+  background-color: #ffb44b;
   background-repeat: no-repeat;
 }
 
@@ -27,8 +27,8 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: -7%;
 }
-
 
 #audio {
   display: flex;
@@ -85,11 +85,112 @@ div.container {
   color: white;
 }
 
+/* Image button flexbox, sets up img#heart for jQuery animiation*/
+
+.click-me {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+#instructions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 100%;
+  color: white;
+}
+
+.day {
+  color: black;
+}
+
+/* Display set to "none" for mobile version html elements */
+
+.togglebtn {
+  display: none;
+}
+
+.dream-gif{
+  display: none;
+}
+
+.miss-gif{
+  display: none;
+}
+
+.think-gif{
+  display: none;
+}
+
+/* CODE FOR MOBILE VERSION */
+
 @media only screen and (max-width: 600px) {
+
   body {
-    background-size: contain;
-    background-position: center;
+    background-image: url("images/yellow.png");
     background-color: #fdf29a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .togglebtn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #dream-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#fb918f;
+    background: #fb918f;
+  }
+
+  #miss-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#fb918f;
+    background: #fb918f;
+  }
+
+  #think-btn {
+    color: white;
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    border:#fb918f;
+    background: #fb918f;
+  }
+
+  .dream-gif{
+    display: none;
+  }
+
+  .miss-gif{
+    display: none;
+  }
+
+  .think-gif{
+    display: none;
+  }
+
+  /* Display set to "none" for website version html elements */
+
+  .click-me {
+    display: none;
   }
 
   #content {
@@ -97,6 +198,10 @@ div.container {
   }
 
   #top {
+    display: none;
+  }
+
+  #instructions {
     display: none;
   }
 }
