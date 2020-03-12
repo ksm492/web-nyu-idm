@@ -4,6 +4,7 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
+  <script type="text/javascript" src="ToggleBackgroundColor.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -35,7 +36,7 @@
 
     <div id="icon">
       <a href="https://ksm492.github.io/web-nyu-idm/object-meditation/the-sun/">
-        <img src="images/sun-icon.png">
+        <img id= "sun-icon" src="images/sun-icon.png">
       </a>
     </div>
 
@@ -47,36 +48,7 @@
     <img id= "heart" src= "images/heart.png">
   </div>
 
-  <!-- The main CONTENT of the website -->
-
-  <div id="content">
-
-    <!-- The "polaroid" photos -->
-
-    <div id="pictures">
-
-      <div class="polaroid">
-        <img src="images/pictures/after-1.jpg" style="width:100%">
-        <div class="container">
-          <p>first semester over</p>
-        </div>
-      </div>
-
-      <div class="polaroid">
-        <img src="images/pictures/after-2.jpg" style="width:100%">
-        <div class="container">
-          <p>first trip to new york</p>
-        </div>
-      </div>
-
-      <div class="polaroid">
-        <img src="images/pictures/after-3.jpg" style="width:100%">
-        <div class="container">
-          <p>last weekend</p>
-        </div>
-      </div>
-
-    </div>
+  <div id= "content">
 
     <!-- The Fallingforyou lyrics -->
 
@@ -85,9 +57,9 @@
       <p>We started losing light</p>
       <p>I'll never make it right</p>
       <p>If you don't wander off</p>
-      <div class= "night">
+      <button class= "night">
       <p>I'm so excited for the night</p>
-      </div>
+    </button>
       <p>All we need's my bike and your enormous house</p>
       <p>You said some day we might</p>
       <p>When I'm closer to your height,</p>
@@ -122,35 +94,57 @@
       <p>And maybe you, change your mind</p>
       <p>- Fallingforyou, The 1975</p>
     </div>
+
+    <div id= "pictures">
+
+      <!-- Credit for MODAL (HTML): https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+
+      <!-- Trigger the Modal -->
+      <img id="myImg" src="images/pictures/after-1.jpg" alt="the first semester is over. it wasn't as easy as we though it would be, but i'm confident that we'll be okay. you're my person and i'm yours." style="width:100%;max-width:300px">
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+      </div>
+
+      <img id="myImg2" src="images/pictures/after-2.jpg" alt="this was your first trip to new york. it was funny because only then, with you by my side, did the city start to feel like home. the weekend you came was the only sunny one in weeks." style="width:100%;max-width:300px">
+
+      <div id="myModal2" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close2">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content2" id="img02">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption2"></div>
+      </div>
+
+      <img id="myImg3" src="images/pictures/after-3.jpg" alt="last weekend you came to visit. you said the flying was becoming easier, but leaving was just as hard as its always been. everywhere i go, i make a note to take you there one day." style="width:100%;max-width:300px">
+
+      <div id="myModal3" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close3">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content3" id="img03">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption3"></div>
+      </div>
   </div>
 
   <!-- MOBILE HTML ELEMENTS-->
-
-      <div class="togglebtn">
-        <button type="button" id="dream-btn">dreaming about you</button>
-      </div>
-
-      <div class="dream-gif">
-        <img src="images/gifs/dream.gif">
-      </div>
-
-      <div class="togglebtn">
-      <button type="button" id="miss-btn">missing you (a lot)</button>
-      </div>
-
-      <div class="miss-gif">
-        <img src="images/gifs/miss.gif">
-      </div>
-
-      <div class="togglebtn">
-      <button type="button" id="think-btn">thinking about you</button>
-      </div>
-
-      <div class="think-gif">
-        <img src="images/gifs/think.gif">
-      </div>
-
-  <!-- GIFS for mobile -->
 
   <script type="text/javascript" src="script.js"></script>
 </body>

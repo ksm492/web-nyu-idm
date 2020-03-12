@@ -23,6 +23,7 @@ body {
 /* Image button flexbox, sets up img#heart for jQuery animiation*/
 
 .click-me {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -31,11 +32,30 @@ body {
   margin-top: -2%;
 }
 
+img#heart:hover {
+  opacity: 0.7;
+}
+
+img#sun-icon:hover {
+  opacity: 0.7;
+}
+
 /* CSS for the div.night class in the lyrics to change its color and hint user
 of jQuery background animation */
 
-.night {
+button.night {
+  cursor: pointer;
+  font-family: "Reenie Beanie", sans-serif;
+  text-align: left;
+  font-size: 85%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #1e1d2a;
+  background: white;
+}
+
+button.night:hover{
+  opacity: 0.7
 }
 
 /* Top flexbox, includes audio, instructions, and linked-icon */
@@ -69,49 +89,10 @@ of jQuery background animation */
   margin-right: 2%;
 }
 
-/* Content flexbox: includes pictures and lyrics */
-
 #content {
   display: flex;
   align-items: flex-start;
   margin-top: -2%;
-}
-
-#pictures {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  margin-left: 55%;
-  margin-top: 2%;
-  position: fixed;
-}
-
-/* CSS for the "polaroid" pictures, credit to https://www.w3schools.com/css/css3_images.asp */
-
-/* Moves middle photo towards center of website using "nth-of-type" to select
-second photo in the flex box column */
-
-div.polaroid:nth-of-type(2) {
-  align-self: center;
-}
-
-/* Determines the formatting of the pictures and the empty white space underneath
-to create "polaroid" effect*/
-
-div.polaroid {
-  width: 30%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* Container for the text underneath the pictures */
-
-div.container {
-  font-family: "Reenie Beanie", sans-serif;
-  color: black;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px 20px;
 }
 
 #falling {
@@ -126,23 +107,118 @@ div.container {
   color: white;
 }
 
+#pictures {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+/* Credit for MODAL (CSS): https://www.w3schools.com/howto/howto_css_modal_images.asp */
+
+#myImg,
+#myImg2,
+#myImg3  {
+  border: 10px solid white;
+  background: white;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#myImg:hover,
+#myImg2:hover,
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal, .modal2, .modal3  {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content,
+.modal-content2,
+.modal-content3  {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption,
+#caption2,
+#caption3 {
+  margin: auto;
+  display: block;
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 24px;;
+  color: white;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+.modal-content2,
+.modal-content3,
+#caption,
+#caption2,
+#caption3 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3  {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Display set to "none" for mobile version html elements */
-
-.togglebtn {
-  display: none;
-}
-
-.dream-gif{
-  display: none;
-}
-
-.miss-gif{
-  display: none;
-}
-
-.think-gif{
-  display: none;
-}
 
 /* CODE FOR MOBILE VERSION */
 
@@ -154,56 +230,6 @@ div.container {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-  }
-
-  .togglebtn {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  #dream-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#9994d6;
-    background: #9994d6;
-  }
-
-  #miss-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#9994d6;
-    background: #9994d6;
-  }
-
-  #think-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#9994d6;
-    background: #9994d6;
-  }
-
-  .dream-gif{
-    display: none;
-  }
-
-  .miss-gif{
-    display: none;
-  }
-
-  .think-gif{
-    display: none;
   }
 
   /* Display set to "none" for website version html elements */
