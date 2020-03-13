@@ -6,9 +6,9 @@
 //
 // // console.log(namesArray[0]);
 //
-function getRandom(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
+// function getRandom(max) {
+//   return Math.floor(Math.random() * Math.floor(max));
+// }
 //
 // //ARRAYS START FROM ZERO, NOT ONE
 //

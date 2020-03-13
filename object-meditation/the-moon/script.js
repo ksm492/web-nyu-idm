@@ -13,7 +13,7 @@ $(document).ready(function() {
   var img = document.getElementById("myImg");
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
-  img.onclick = function(){
+  img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -34,7 +34,7 @@ $(document).ready(function() {
   var img2 = document.getElementById("myImg2");
   var modalImg2 = document.getElementById("img02");
   var captionText2 = document.getElementById("caption2");
-  img2.onclick = function(){
+  img2.onclick = function() {
     modal2.style.display = "block";
     modalImg2.src = this.src;
     captionText2.innerHTML = this.alt;
@@ -55,7 +55,7 @@ $(document).ready(function() {
   var img3 = document.getElementById("myImg3");
   var modalImg3 = document.getElementById("img03");
   var captionText3 = document.getElementById("caption3");
-  img3.onclick = function(){
+  img3.onclick = function() {
     modal3.style.display = "block";
     modalImg3.src = this.src;
     captionText3.innerHTML = this.alt;
@@ -75,22 +75,27 @@ $(document).ready(function() {
   var backgroundColor = "background-color";
   var isDark = false;
 
-  button.addEventListener("click", function(){
-  if(isDark){
-  document.body.style.backgroundColor = "#9994d6";
-  isDark = false;
-  } else{
-  document.body.style.backgroundColor = "#1e1d2a";
-  isDark = true;
-  }
+  button.addEventListener("click", function() {
+    if (isDark) {
+      document.body.style.backgroundColor = "#9994d6";
+      isDark = false;
+    } else {
+      document.body.style.backgroundColor = "#1e1d2a";
+      isDark = true;
+    }
   });
 
   $("#heart").click(function() {
     var windowHeight = $(window).height();
 
     $("#heart").fadeIn()
-    .css({position:'relative'})
-    .animate({top:windowHeight}, 1000, function()
-    { $('#heart').removeAttr('style'); });
-    });
+      .css({
+        position: 'relative'
+      })
+      .animate({
+        top: windowHeight
+      }, 1000, function() {
+        $('#heart').removeAttr('style');
+      });
+  });
 });
