@@ -37,8 +37,6 @@ img#sun-icon:hover {
   opacity: 0.7;
 }
 
-/* CSS for the div.night class in the lyrics to change its color and hint user
-of jQuery background animation */
 button.night {
   cursor: pointer;
   font-family: "Reenie Beanie", sans-serif;
@@ -233,46 +231,15 @@ button.night:hover {
   display: none;
 }
 
-/* CODE FOR MOBILE VERSION: IPHONE 5/SE */
-@media only screen and (device-width : 320px) and (device-height : 568) {
-  body {
-    background-image: url("images/blue.png");
-    background-color: #b9daee;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-
-  /* Display set to "none" for .website-only class */
-  .website-only {
-    display: none;
-  }
-}
-
-/* CODE FOR MOBILE VERSION: IPHONE 6/7/8 */
-@media only screen and (device-width : 375px) and (device-height : 667px) {
-  body {
-    background-image: url("images/blue.png");
-    background-color: #b9daee;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-
-  /* Display set to "none" for .website-only class */
-  .website-only {
-    display: none;
-  }
-}
-
-/* CODE FOR MOBILE VERSION: IPHONE XR */
+/* CODE FOR MOBILE VERSION: IPHONE X */
 @media only screen and (device-width : 375px) and (device-height : 812px) {
   body {
-    background-image: url("images/blue.png");
+    background-image: url("images/kiana-bunny.png");
     background-color: #b9daee;
-    background-size: cover;
+    background-size: 78%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-x: left;
+    background-position-y: top;
   }
 
   /* Display set to "none" for .website-only class */

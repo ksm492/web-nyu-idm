@@ -1,4 +1,4 @@
-console.log("I'm here, I'm here!!")
+console.log("I'm here, I'm here!!");
 
 $(document).ready(function() {
 
