@@ -238,7 +238,7 @@ button.you:hover {
 @media only screen and (device-width : 375px) and (device-height : 812px) {
   body {
     background-image: url("images/anna-bunny.png");
-    background-color: yellow;
+    background-color: #ffed83;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: right;
