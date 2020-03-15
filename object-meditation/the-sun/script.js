@@ -77,10 +77,10 @@ $(document).ready(function() {
 
   button.addEventListener("click", function() {
     if (isDark) {
-      document.body.style.backgroundColor = "orange";
+      document.body.style.backgroundColor = "#ffab57";
       isDark = false;
     } else {
-      document.body.style.backgroundColor = "hotpink";
+      document.body.style.backgroundColor = "#ff7575";
       isDark = true;
     }
   });
