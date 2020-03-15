@@ -4,6 +4,7 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
+  <!-- <script type="text/javascript" src="ToggleBackgroundColor.js"></script> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,142 +13,165 @@
 </head>
 
 <body>
-  <div id="top">
 
-    <div id="audio">
-      <audio controls>
-        <source src="waiting.mp3" type="audio/mpeg">
-      </audio>
+  <!-- WEBSITE HTML ELEMENTS -->
+
+  <div class="website-only">
+
+    <!--Elements at the TOP of the website -->
+
+    <div id="top">
+
+      <!-- The AUDIO control button -->
+
+      <div id="audio">
+        <audio controls>
+          <source src="waiting.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <!-- The moon ICON that links to partner website-->
+
+      <div id="icon">
+        <a href="https://ksm492.github.io/web-nyu-idm/object-meditation/the-moon/">
+          <img id="moon-icon" src="images/moon-icon.png">
+        </a>
+      </div>
+
     </div>
 
-    <div id="icon">
-      <a href="https://ksm492.github.io/web-nyu-idm/object-meditation/the-moon/">
-        <img src="images/moon-icon.png">
-      </a>
+    <div id="content">
+
+      <div id="pictures">
+
+        <!-- Credit for MODAL (HTML): https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+
+        <!-- Trigger the Modal -->
+        <img id="myImg" src="images/pictures/before-1.jpg" alt="this was our 6th month anniversary! it’s funny looking at this photo because we thought we were so old and mature but we were actual babies and had no idea what was yet to come, especially in our relationship." style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+
+        <img id="myImg2" src="images/pictures/before-3.jpg" alt="this was senior skip day. by this time, we knew where we were all going to school and i remember feeling terribly scared because i knew you and i would have to face the future of our relationship."
+          style="width:100%;max-width:300px">
+
+        <div id="myModal2" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close2">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content2" id="img02">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption2"></div>
+        </div>
+
+        <img id="myImg3" src="images/pictures/before-2.jpg" alt="this was prom! you and i got nominated for prom court and i was so excited to be the first lgtbq couple nominated at school. we danced our little hearts out and i’ll never forget how happy i felt that night."
+          style="width:100%;max-width:300px">
+
+        <div id="myModal3" class="modal">
+
+          <!-- The Close Button -->
+          <span class="close3">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content3" id="img03">
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption3"></div>
+        </div>
+
+      </div>
+
+      <!-- The Fallingforyou lyrics -->
+
+      <div id="waiting">
+        <p>I thought I made it clear as crystal</p>
+        <p>It doesn't have to be this hard</p>
+        <p>But you ain't good at reading signals</p>
+        <p>When they come straight from the heart</p>
+        <p>You've been thinking, you've been thinking,</p>
+        <p>overthinking, you've been thinking, babe</p>
+        <p>Just a little too much</p>
+        <p>I wish you knew what I want</p>
+        <p>I been looking, I been looking, I been looking in the mirror</p>
+        <p>Making little touch-ups</p>
+        <p>And I hope you know that I want you</p>
+        <p>I've been sitting here waiting</p>
+        <p>I've been waiting for you</p>
+        <p>I've sent out invitations</p>
+        <p>It's getting frustrating waiting for you</p>
+        <p>I think you know what I want</p>
+        <p>I think you know what I want</p>
+        <p>I think you know what I want</p>
+        <p>I think you know, I'm waiting for you</p>
+        <p>I'll take your hand and kiss your fingers</p>
+        <p>So you don't have to break the ice</p>
+        <p>No need for chill just lose your filter</p>
+        <p>I'm ready to dive in</p>
+        <p>Melt the ice and just swim</p>
+        <p>You've been thinking, you've been thinking,</p>
+        <p>overthinking, you've been thinking, babe</p>
+        <p>Just a little too much</p>
+        <p>I wish you knew what I want</p>
+        <p>We been drinking, we been drinking, we been drinking,</p>
+        <p>we been drinking, babe</p>
+        <p>Just a little too much</p>
+        <p>And I hope you know that I want you</p>
+        <p>I've been sitting here waiting</p>
+        <p>I've been waiting for you</p>
+        <p>I've sent out invitations</p>
+        <p>It's getting frustrating waiting for you</p>
+        <p>I think you know what I want</p>
+        <p>I think you know what I want</p>
+        <p>I think you know what I want</p>
+        <p>I think you know, I'm waiting for you</p>
+        <p>I think you know what I want</p>
+        <p>Now I think you know what I want</p>
+        <p>I think you know what I want</p>
+        <p>I think you know, I'm waiting for you</p>
+        <button class="you">
+        <p>I'm waiting for you</p>
+        </button>
+        <p>I gotta have you</p>
+        <p>I've been sitting here waiting</p>
+        <p>I've been waiting for you</p>
+        <p>I've sent out invitations</p>
+        <p>It's getting frustrating waiting for you...</p>
+        <p>-Waiting for You, The Aces</p>
+      </div>
+
     </div>
+
+    <!-- The CLICKABLE image, i.e. heart.png -->
+
+    <div class="click-me">
+      <img id="heart" src="images/heart.png">
+    </div>
+
+    <!-- The INSTRUCTION text -->
+
+    <p id="instructions">click the heart to send love</p>
 
   </div>
 
-  <div id="content">
-    <div id="pictures">
-
-      <div class="polaroid">
-        <img src="images/pictures/before-1.jpg" style="width:100%">
-        <div class="container">
-          <p>six months together</p>
-        </div>
-      </div>
-
-      <div class="polaroid">
-        <img src="images/pictures/before-2.jpg" style="width:100%">
-        <div class="container">
-          <p>senior prom!</p>
-        </div>
-      </div>
-
-      <div class="polaroid">
-        <img src="images/pictures/before-3.jpg" style="width:100%">
-        <div class="container">
-          <p>last summer</p>
-        </div>
-      </div>
-
+    <!-- MOBILE HTML ELEMENTS-->
+    <div class="mobile-only">
+        <img id= "anna-bunny" src="images/anna-bunny.png">
     </div>
 
-    <div id="waiting">
-      <p>I thought I made it clear as crystal</p>
-      <p>It doesn't have to be this hard</p>
-      <p>But you ain't good at reading signals</p>
-      <p>When they come straight from the heart</p>
-      <p>You've been thinking, you've been thinking, overthinking, you've been thinking, babe</p>
-      <p>Just a little too much</p>
-      <p>I wish you knew what I want</p>
-      <p>I been looking, I been looking, I been looking in the mirror</p>
-      <p>Making little touch-ups</p>
-      <p>And I hope you know that I want you</p>
-      <p>I've been sitting here waiting</p>
-      <div class= "day">
-      <p>I've been waiting for you</p>
-      </div>
-      <p>I've sent out invitations</p>
-      <p>It's getting frustrating waiting for you</p>
-      <p>I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know, I'm waiting for you</p>
-      <p>I'll take your hand and kiss your fingers</p>
-      <p>So you don't have to break the ice</p>
-      <p>No need for chill just lose your filter</p>
-      <p>I'm ready to dive in</p>
-      <p>Melt the ice and just swim</p>
-      <p>You've been thinking, you've been thinking, overthinking, you've been thinking, babe</p>
-      <p>Just a little too much</p>
-      <p>I wish you knew what I want</p>
-      <p>We been drinking, we been drinking, we been drinking, we been drinking, babe</p>
-      <p>Just a little too much</p>
-      <p>And I hope you know that I want you</p>
-      <p>I've been sitting here waiting</p>
-      <p>I've been waiting for you</p>
-      <p>I've sent out invitations</p>
-      <p>It's getting frustrating waiting for you</p>
-      <p>I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know, I'm waiting for you</p>
-      <p>I think you know what I want</p>
-      <p>Now I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know, I'm waiting for you</p>
-      <p>I'm waiting for you</p>
-      <p>I gotta have you</p>
-      <p>I've been sitting here waiting</p>
-      <p>I've been waiting for you</p>
-      <p>I've sent out invitations</p>
-      <p>It's getting frustrating waiting for you</p>
-      <p>I think you know what I want</p>
-      <p>Now I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know, I'm waiting for you</p>
-      <p>I think you know what I want</p>
-      <p>Now I think you know what I want</p>
-      <p>I think you know what I want</p>
-      <p>I think you know, I'm waiting for you</p>
-    </div>
-  </div>
-
-  <div class= "click-me">
-    <img id= "heart" src= "images/heart.png">
-  </div>
-
-  <p id= "instructions">click the heart to send love</p>
-
-  <!-- MOBILE HTML ELEMENTS-->
-
-      <div class="togglebtn">
-        <button type="button" id="dream-btn">dreaming about you</button>
-      </div>
-
-      <div class="dream-gif">
-        <img src="images/gifs/dream.gif">
-      </div>
-
-      <div class="togglebtn">
-      <button type="button" id="miss-btn">missing you (a lot)</button>
-      </div>
-
-      <div class="miss-gif">
-        <img src="images/gifs/miss.gif">
-      </div>
-
-      <div class="togglebtn">
-      <button type="button" id="think-btn">thinking about you</button>
-      </div>
-
-      <div class="think-gif">
-        <img src="images/gifs/think.gif">
-      </div>
-
-  <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

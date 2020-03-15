@@ -8,200 +8,245 @@ body {
   box-sizing: inherit;
 }
 
+/* CODE FOR WEBSITE VERSION */
+/* Body, sets the background image and background formatting */
 body {
   background-image: url("images/sun.png");
   background-size: cover;
-  background-position: bottom;
-  background-color: #ffb44b;
+  background-color: orange;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
+/* Image button flexbox, sets up img#heart for jQuery animiation*/
+.click-me {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1%;
+}
+
+img#heart:hover {
+  opacity: 0.7;
+}
+
+#instructions {
+  display: flex;
+  justify-content: center;
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 100%;
+  color: white;
+  margin-bottom: 2%;
+}
+
+img#moon-icon:hover {
+  opacity: 0.7;
+}
+
+button.you {
+  cursor: pointer;
+  font-family: "Reenie Beanie", sans-serif;
+  text-align: left;
+  font-size: 85%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: hotpink;
+  background: white;
+}
+
+button.you:hover {
+  opacity: 0.7
+}
+
+/* Top flexbox, includes audio, instructions, and linked-icon */
 #top {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   flex-direction: row-reverse;
-}
-
-#content {
-  display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: -7%;
+  margin-top: 2%;
 }
 
 #audio {
   display: flex;
   justify-content: flex-start;
-  width: 15%;
-  height: auto;
-  margin-top: 2%;
   margin-right: 2%;
 }
 
 #icon {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 2%;
+  justify-content: flex-end;
   margin-left: 2%;
 }
 
-#pictures {
+#content {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
-  margin-top: 2%;
-  margin-left: 2%;
-  position: fixed;
-}
-
-div.polaroid:nth-of-type(2) {
-  align-self: center;
-}
-
-div.polaroid {
-  width: 30%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div.container {
-  font-family: "Reenie Beanie", sans-serif;
-  color: black;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px 20px;
+  margin-bottom: 2%;
 }
 
 #waiting {
   display: flex;
   display: block;
   flex-wrap: wrap;
+  justify-content: flex-end;
   text-align: right;
+  margin-left: 70%;
+  margin-right: 2%;
+  margin-bottom: -10%;
   font-family: "Reenie Beanie", sans-serif;
-  margin-left: 68%;
   width: 30%;
   font-size: 150%;
   color: white;
 }
 
-/* Image button flexbox, sets up img#heart for jQuery animiation*/
-
-.click-me {
+#pictures {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-top: 5%;
+  position: absolute;
 }
 
-#instructions {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+/* Credit for MODAL (CSS): https://www.w3schools.com/howto/howto_css_modal_images.asp */
+#myImg,
+#myImg2,
+#myImg3 {
+  border: 10px solid white;
+  background: white;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 65%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myImg:hover,
+#myImg2:hover,
+#myImg3:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal, .modal2, .modal3 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content,
+.modal-content2,
+.modal-content3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption,
+#caption2,
+#caption3 {
+  margin: auto;
+  display: block;
   font-family: "Reenie Beanie", sans-serif;
-  font-size: 100%;
+  font-size: 24px;
+  ;
   color: white;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  height: 150px;
 }
 
-.day {
-  color: #fa7976;
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+.modal-content2,
+.modal-content3,
+#caption,
+#caption2,
+#caption3 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
-/* Display set to "none" for mobile version html elements */
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
 
-.togglebtn {
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close,
+.close2,
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Display set to "none" for .mobile-only class */
+.mobile-only {
   display: none;
 }
 
-.dream-gif{
-  display: none;
-}
-
-.miss-gif{
-  display: none;
-}
-
-.think-gif{
-  display: none;
-}
-
-/* CODE FOR MOBILE VERSION */
-
-@media only screen and (max-width: 600px) {
-
+/* CODE FOR MOBILE VERSION: IPHONE X */
+@media only screen and (device-width : 375px) and (device-height : 812px) {
   body {
-    background-image: url("images/yellow.png");
-    background-color: #fdf29a;
-    background-size: cover;
+    background-image: url("images/anna-bunny.png");
+    background-color: yellow;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-x: right;
+    background-position-y: top;
   }
 
-  .togglebtn {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  #dream-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#fb918f;
-    background: #fb918f;
-  }
-
-  #miss-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#fb918f;
-    background: #fb918f;
-  }
-
-  #think-btn {
-    color: white;
-    font-family: "Reenie Beanie", sans-serif;
-    font-size: 18px;
-    border-radius: 6px;
-    border:#fb918f;
-    background: #fb918f;
-  }
-
-  .dream-gif{
-    display: none;
-  }
-
-  .miss-gif{
-    display: none;
-  }
-
-  .think-gif{
-    display: none;
-  }
-
-  /* Display set to "none" for website version html elements */
-
-  .click-me {
-    display: none;
-  }
-
-  #content {
-    display: none;
-  }
-
-  #top {
-    display: none;
-  }
-
-  #instructions {
+  /* Display set to "none" for .website-only class */
+  .website-only {
     display: none;
   }
 }
