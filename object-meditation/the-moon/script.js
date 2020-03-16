@@ -99,3 +99,12 @@ $(document).ready(function() {
       });
   });
 });
+
+// Scroll button credit: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
+  $("#scrollBtn").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({
+      scrollTop: 0
+    }, "slow");
+    return false;
+  });

@@ -2,8 +2,6 @@ console.log("I'm here, I'm here!!");
 
 $(document).ready(function() {
 
-  // jQuery for WEBSITE
-
   // Credit for MODAL (JS): https://www.w3schools.com/howto/howto_css_modal_images.asp //
 
   // Get the modal
@@ -98,4 +96,13 @@ $(document).ready(function() {
         $('#heart').removeAttr('style');
       });
   });
+});
+
+// Scroll button credit: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
+$("#scrollBtn").click(function(event) {
+  event.preventDefault();
+  $("html, body").animate({
+    scrollTop: 2000
+  }, "slow");
+  return false;
 });

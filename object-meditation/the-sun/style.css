@@ -61,13 +61,33 @@ button.you:hover {
   opacity: 0.7
 }
 
-/* Top flexbox, includes audio, instructions, and linked-icon */
+#scrollBtn {
+  display: block;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Reenie Beanie", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background: white;
+}
+
+#scrollBtn:hover {
+  opacity: 0.7
+}
+
+/* Flexbox for elements at the top of the website */
+
 #top {
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
   justify-content: space-between;
-  margin-top: 2%;
+  flex-wrap: wrap;
+  margin-top: -3%;
 }
 
 #audio {
@@ -108,7 +128,7 @@ button.you:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-left: 2%;
+  margin-left: 4%;
   margin-top: 5%;
   position: absolute;
 }
@@ -122,7 +142,7 @@ button.you:hover {
   padding: 15px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 65%;
+  margin-top: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

@@ -26,7 +26,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  margin-top: -2%;
+  /* margin-top: -2%; */
 }
 
 img#heart:hover {
@@ -52,6 +52,15 @@ button.night:hover {
   opacity: 0.7
 }
 
+#instructions {
+  display: flex;
+  margin-top: -2%;
+  justify-content: center;
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 100%;
+  color: white;
+}
+
 /* Top flexbox, includes audio, instructions, and linked-icon */
 #top {
   display: flex;
@@ -67,15 +76,6 @@ button.night:hover {
   margin-left: 2%;
 }
 
-#instructions {
-  display: flex;
-  justify-content: center;
-  font-family: "Reenie Beanie", sans-serif;
-  font-size: 100%;
-  color: white;
-  margin-right: 13%
-}
-
 #icon {
   display: flex;
   justify-content: flex-end;
@@ -85,7 +85,7 @@ button.night:hover {
 #content {
   display: flex;
   align-items: flex-start;
-  margin-top: -2%;
+  margin-top: -4%;
 }
 
 #falling {
@@ -224,6 +224,24 @@ button.night:hover {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+#scrollBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4%;
+  font-family: "Reenie Beanie", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  background: white;
+}
+
+#scrollBtn:hover {
+  opacity: 0.7
 }
 
 /* Display set to "none" for .mobile-only class */
