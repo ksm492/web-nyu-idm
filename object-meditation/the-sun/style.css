@@ -118,7 +118,6 @@ button.you:hover {
   margin-right: 2%;
   margin-bottom: -10%;
   font-family: "Reenie Beanie", sans-serif;
-  width: 30%;
   font-size: 150%;
   color: white;
 }
@@ -129,7 +128,6 @@ button.you:hover {
   justify-content: flex-start;
   flex-direction: column;
   margin-left: 4%;
-  margin-top: 5%;
   position: absolute;
 }
 
