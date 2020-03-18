@@ -4,10 +4,9 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
-  <!-- <script type="text/javascript" src="ToggleBackgroundColor.js"></script> -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel = "icon" href =  "images/moon-icon.png">
+  <link rel="icon" href="images/icons/moon-icon.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
   <title>The Moon</title>
@@ -19,50 +18,33 @@
 
   <div class="website-only">
 
-    <!--Elements at the TOP of the website -->
-
     <div id="top">
-
-      <!-- The AUDIO control button -->
-
       <div id="audio">
         <audio controls>
           <source src="falling.mp3" type="audio/mpeg">
         </audio>
       </div>
-
-
-      <!-- The sun ICON that links to partner website-->
-
       <div id="icon">
         <a href="https://ksm492.github.io/web-nyu-idm/object-meditation/the-sun/">
-          <img id="sun-icon" src="images/sun-icon.png">
+          <img id="sun-icon" src="images/icons/sun-icon.png">
         </a>
       </div>
-
     </div>
-
-    <!-- The INSTRUCTION text -->
 
     <p id="instructions">click the heart to send love</p>
 
-    <!-- The CLICKABLE image, i.e. heart.png -->
-
     <div class="click-me">
-      <img id="heart" src="images/heart.png">
+      <img id="heart" src="images/icons/heart.png">
     </div>
 
     <div id="content">
-
-      <!-- The Fallingforyou lyrics -->
-
       <div id="falling">
         <p>What time you coming out?</p>
         <p>We started losing light</p>
         <p>I'll never make it right</p>
         <p>If you don't wander off</p>
         <button class="night">
-        <p>I'm so excited for the night</p>
+          <p>I'm so excited for the night</p>
         </button>
         <p>All we need's my bike and your enormous house</p>
         <p>You said some day we might</p>
@@ -100,69 +82,70 @@
       </div>
 
       <div id="pictures">
-
         <!-- Credit for MODAL (HTML): https://www.w3schools.com/howto/howto_css_modal_images.asp -->
-
         <!-- Trigger the Modal -->
-        <img id="myImg" src="images/pictures/after-1.jpg" alt="the first semester is over. it wasn't as easy as we though it would be, but it beats the alternative. i can't imagine my life without you. you're my person." style="width:100%;max-width:300px">
-
+        <img id="myImg" src="images/pictures/after-1.jpg" alt="the first semester is over. it wasn't as easy as we though it would be, but it beats the alternative. i can't imagine my life without you. you're my person."
+          style="width:100%;max-width:300px">
         <!-- The Modal -->
         <div id="myModal" class="modal">
-
           <!-- The Close Button -->
           <span class="close">&times;</span>
-
           <!-- Modal Content (The Image) -->
           <img class="modal-content" id="img01">
-
           <!-- Modal Caption (Image Text) -->
           <div id="caption"></div>
         </div>
-
-        <img id="myImg2" src="images/pictures/after-2.jpg" alt="this was your first trip to new york. it's kind of funny because only then, with you by my side, did the city finally start to feel like home. what's even funnier is that the weekend you came was the only sunny one in weeks."
+        <img id="myImg2" src="images/pictures/after-2.jpg"
+          alt="this was your first trip to new york. it's kind of funny because only then, with you by my side, did the city finally start to feel like home. what's even funnier is that the weekend you came was the only sunny one in weeks."
           style="width:100%;max-width:300px">
-
         <div id="myModal2" class="modal">
-
           <!-- The Close Button -->
           <span class="close2">&times;</span>
-
           <!-- Modal Content (The Image) -->
           <img class="modal-content2" id="img02">
-
           <!-- Modal Caption (Image Text) -->
           <div id="caption2"></div>
         </div>
-
-        <img id="myImg3" src="images/pictures/after-3.jpg" alt="last weekend you came to visit. you said that flying was becoming easier, but leaving was just as hard. but maybe one day you won't be leaving. maybe one day, we'll both call the city home."
-          style="width:100%;max-width:300px">
-
+        <img id="myImg3" src="images/pictures/after-3.jpg"
+          alt="last weekend you came to visit. you said that flying was becoming easier, but leaving was just as hard. but maybe one day you won't be leaving. maybe one day, we'll both call the city home." style="width:100%;max-width:300px">
         <div id="myModal3" class="modal">
-
           <!-- The Close Button -->
           <span class="close3">&times;</span>
-
           <!-- Modal Content (The Image) -->
           <img class="modal-content3" id="img03">
-
           <!-- Modal Caption (Image Text) -->
           <div id="caption3"></div>
         </div>
-
       </div>
-
     </div>
 
-    <button id="scrollBtn"><p>scroll to top</p></button>
+    <button id="scrollBtn">
+      <p>scroll to top</p>
+    </button>
 
   </div>
 
-    <!-- MOBILE HTML ELEMENTS-->
-    <div class="mobile-only">
-        <img id= "kiana-bunny" src="images/kiana-bunny.png">
-    </div>
+  <!-- MOBILE HTML ELEMENTS-->
 
-    <script type="text/javascript" src="script.js"></script>
+  <div class="mobile-only">
+    <!-- IPHONE X: BUNNY AS BACKGROUND -->
+    <img id="kiana-bunny" src="images/backgrounds/kiana-bunny.png">
+    <!-- IPHONE 6/7/8: LIVE UPDATES -->
+    <div class="prompt">
+      <p>right now anna is...</p>
+    </div>
+    <div class="update"></div>
+    <div class="gifs"></div>
+    <!-- IPHONE 5/5S: MESSAGES/FACETIMES -->
+    <div class="contact">
+      <img id="message" src="images/contact/message.png"></img>
+      <img id="facetime" src="images/contact/facetime.png"></img>
+    </div>
+    <img id="kiana-txt" class="contact-imgs" src="images/contact/kiana-txt.png">
+    <img id="kiana-ft" class="contact-imgs" src="images/contact/kiana-ft.png">
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ console.log("I'm here, I'm here!!");
 
 $(document).ready(function() {
 
-  // jQuery for WEBSITE
+  // IMAGE MODAL (POP UP)
 
   // Credit for MODAL (JS): https://www.w3schools.com/howto/howto_css_modal_images.asp //
 
@@ -85,22 +85,24 @@ $(document).ready(function() {
     }
   });
 
+  // HEART "SENDING" ANIMATION
+
   $("#heart").click(function() {
     var windowHeight = $(window).height();
 
     $("#heart").fadeIn()
       .css({
-        position: 'relative'
+        position: "relative"
       })
       .animate({
         top: windowHeight
       }, 1000, function() {
-        $('#heart').removeAttr('style');
+        $("#heart").removeAttr("style");
       });
   });
-});
 
-// Scroll button credit: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
+  // Scroll button credit: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/
+
   $("#scrollBtn").click(function(event) {
     event.preventDefault();
     $("html, body").animate({
@@ -108,3 +110,30 @@ $(document).ready(function() {
     }, "slow");
     return false;
   });
+
+  // IPHONE 6/7/8 RANDOM UPDATE/GIF
+
+  let updateArray = ["thinking of you", "dreaming about you", "missing you (a lot)"];
+  let gifsArray = ["images/gifs/think.gif", "images/gifs/dream.gif", "images/gifs/miss.gif"];
+
+  function getRandom(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  let i = getRandom([3]);
+  let randomUpdate = updateArray[i];
+  let randomGif = gifsArray[i];
+
+  $(".update").html(updateArray[i]);
+  $(".gifs").html('<img src="' + gifsArray[i] + '">');
+
+  // IPHONE5/5S TOGGLE IMAGE DISPLAY
+
+  $("img#message").click(function() {
+    $("img#kiana-txt").toggle("display");
+  });
+
+  $("img#facetime").click(function() {
+    $("img#kiana-ft").toggle("display");
+  });
+});

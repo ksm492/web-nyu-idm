@@ -8,17 +8,16 @@ body {
   box-sizing: inherit;
 }
 
-/* CODE FOR WEBSITE VERSION */
-/* Body, sets the background image and background formatting */
+/* CSS FOR WEBSITE VERSION */
+
 body {
-  background-image: url("images/moon.png");
+  background-image: url("images/backgrounds/moon.png");
   background-size: cover;
   background-color: #9994d6;
   background-repeat: no-repeat;
   background-position: top;
 }
 
-/* Image button flexbox, sets up img#heart for jQuery animiation*/
 .click-me {
   cursor: pointer;
   display: flex;
@@ -26,7 +25,6 @@ body {
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  /* margin-top: -2%; */
 }
 
 img#heart:hover {
@@ -49,7 +47,7 @@ button.night {
 }
 
 button.night:hover {
-  opacity: 0.7
+  opacity: 0.7;
 }
 
 #instructions {
@@ -61,7 +59,6 @@ button.night:hover {
   color: white;
 }
 
-/* Top flexbox, includes audio, instructions, and linked-icon */
 #top {
   display: flex;
   align-items: flex-start;
@@ -241,18 +238,17 @@ button.night:hover {
 }
 
 #scrollBtn:hover {
-  opacity: 0.7
+  opacity: 0.7;
 }
 
-/* Display set to "none" for .mobile-only class */
 .mobile-only {
   display: none;
 }
 
-/* CODE FOR MOBILE VERSION: IPHONE X */
+/* CSS FOR MOBILE VERSION: IPHONE X */
 @media only screen and (device-width : 375px) and (device-height : 812px) {
   body {
-    background-image: url("images/kiana-bunny.png");
+    background-image: url("images/backgrounds/kiana-bunny.png");
     background-color: #b9daee;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -260,7 +256,121 @@ button.night:hover {
     background-position-y: top;
   }
 
-  /* Display set to "none" for .website-only class */
+  .mobile-only {
+    display: block;
+  }
+
+  .prompt,
+  .update,
+  .gifs,
+  .contact,
+  .contact-imgs,
+  img#kiana-bunny,
+  .website-only {
+    display: none;
+  }
+}
+
+/* CSS FOR MOBILE VERSION: IPHONE 6/7/8 */
+@media only screen and (device-width : 375px) and (device-height : 667px) {
+  body {
+    background-image: url("images/backgrounds/blue.png");
+    background-color: #b9daee;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+    font-family: "Reenie Beanie", sans-serif;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    text-shadow: 2px 2px white;
+    font-size: 42px;
+    text-decoration: underline;
+    text-align: center;
+    color: #9994d6;
+  }
+
+  .update {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-size: 36px;
+    background-color: white;
+    text-align: center;
+    color: #9994d6;
+  }
+
+  .gifs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+  }
+
+    .contact,
+    .contact-imgs,
+    img#kiana-bunny,
+    .website-only {
+      display: none;
+    }
+  }
+
+/* CSS FOR MOBILE VERSION: IPHONE 6/7/8 */
+@media only screen and (device-width : 320px) and (device-height : 568px) {
+  body {
+    background-image: url("images/backgrounds/blue.png");
+    background-color: #b9daee;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  img#message {
+    margin-right: 5%;
+  }
+
+  img#facetime {
+    margin-left: 5%;
+  }
+
+  img#facetime:hover,
+  img#message:hover {
+    opacity: 0.7;
+  }
+
+  .contact-imgs {
+    display: block;
+    margin-left: 11%;
+    margin-top: 10%;
+  }
+
+  img#kiana-txt,
+  img#kiana-ft {
+    display: none;
+  }
+
+  .prompt,
+  .update,
+  .gifs,
+  img#kiana-bunny,
   .website-only {
     display: none;
   }
