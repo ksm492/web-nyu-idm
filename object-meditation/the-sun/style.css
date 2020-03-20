@@ -8,17 +8,16 @@ body {
   box-sizing: inherit;
 }
 
-/* CODE FOR WEBSITE VERSION */
-/* Body, sets the background image and background formatting */
+/* CSS FOR WEBSITE VERSION */
+
 body {
-  background-image: url("images/sun.png");
+  background-image: url("images/backgrounds/sun.png");
   background-size: cover;
   background-color: #ffab57;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-/* Image button flexbox, sets up img#heart for jQuery animiation*/
 .click-me {
   cursor: pointer;
   display: flex;
@@ -78,8 +77,6 @@ button.you:hover {
 #scrollBtn:hover {
   opacity: 0.7
 }
-
-/* Flexbox for elements at the top of the website */
 
 #top {
   display: flex;
@@ -247,7 +244,6 @@ button.you:hover {
   cursor: pointer;
 }
 
-/* Display set to "none" for .mobile-only class */
 .mobile-only {
   display: none;
 }
@@ -255,15 +251,129 @@ button.you:hover {
 /* CODE FOR MOBILE VERSION: IPHONE X */
 @media only screen and (device-width : 375px) and (device-height : 812px) {
   body {
-    background-image: url("images/anna-bunny.png");
-    background-color: #ffed83;
+    background-image: url("images/backgrounds/anna-bunny.png");
+    background-color: #fdf29a;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
   }
 
-  /* Display set to "none" for .website-only class */
+  .mobile-only {
+    display: block;
+  }
+
+  .prompt,
+  .update,
+  .gifs,
+  .contact,
+  .contact-imgs,
+  img#anna-bunny,
+  .website-only {
+    display: none;
+  }
+}
+
+/* CSS FOR MOBILE VERSION: IPHONE 6/7/8 */
+@media only screen and (device-width : 375px) and (device-height : 667px) {
+  body {
+    background-image: url("images/backgrounds/yellow.png");
+    background-color: #fdf29a;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+    font-family: "Reenie Beanie", sans-serif;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    text-shadow: 2px 2px white;
+    font-size: 42px;
+    text-decoration: underline;
+    text-align: center;
+    color: #ffab57;
+  }
+
+  .update {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-size: 36px;
+    background-color: white;
+    text-align: center;
+    color: #ffab57;
+  }
+
+  .gifs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+  }
+
+    .contact,
+    .contact-imgs,
+    img#anna-bunny,
+    .website-only {
+      display: none;
+    }
+  }
+
+/* CSS FOR MOBILE VERSION: IPHONE 6/7/8 */
+@media only screen and (device-width : 320px) and (device-height : 568px) {
+  body {
+    background-image: url("images/backgrounds/yellow.png");
+    background-color: #fdf29a;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  img#message {
+    margin-right: 5%;
+  }
+
+  img#facetime {
+    margin-left: 5%;
+  }
+
+  img#facetime:hover,
+  img#message:hover {
+    opacity: 0.7;
+  }
+
+  .contact-imgs {
+    display: block;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  img#anna-txt,
+  img#anna-ft {
+    display: none;
+  }
+
+  .prompt,
+  .update,
+  .gifs,
+  img#anna-bunny,
   .website-only {
     display: none;
   }
