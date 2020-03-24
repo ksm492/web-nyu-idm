@@ -77,7 +77,7 @@ $(document).ready(function() {
 
   button.addEventListener("click", function() {
     if (isDark) {
-      document.body.style.backgroundColor = "#9994d6";
+      document.body.style.backgroundColor = "#645dc1";
       isDark = false;
     } else {
       document.body.style.backgroundColor = "#1e1d2a";
