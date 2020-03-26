@@ -1,5 +1,3 @@
-//Welcome to the in-class challenge!
-
 let myAlphabet = ['A', 'B', 'C', 'D','E','F','G'];
 
 // 1. What is the length of the array?
@@ -39,18 +37,20 @@ let colors = ["red", "orange", "yellow", "green", "blue"];
 // 5.  Console.log each item in the array
 // push your edits to github!!
 
-for (i=0; i < colors.length; i++) {
-  console.log(colors[i]);
-}
+// for (i=0; i < colors.length; i++) {
+//   console.log(colors[i]);
+// }
 
 // 6. Declare an empty string variable called 'text'. Each time you console.log a color from the above challenge number 2, add your color to this variable.
 // push your edits to github!!
 
-let text = "";
+let colorsText = "";
 
 for (let i = 0; i < colors.length; i++) {
-  text += colors[i] + "</br>";
+  colorsText += colors[i] + "</br>";
 }
 
 //7. Create a div in the index.html with a unique id called whatever you want. Display the contents of your text variable to this div. Now you should have a list of 5 colors visible on your website.
 // push your edits to github!!
+
+$('#colors').html(colorsText);
